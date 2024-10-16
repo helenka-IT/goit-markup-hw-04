@@ -148,10 +148,11 @@ a {
   border: none;
   min-width: 169px;
   height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .section-first {
@@ -263,6 +264,7 @@ a {
 .our-team-item {
   background-color: #ffffff;
   text-align: center;
+  height: calc(100%- 72px) / 4;
   width: calc(100%- 72px) / 4;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -308,7 +310,8 @@ a {
   background-color: #4d5ae5;
   margin-top: 8px;
 }
-.media-social-list-link:hover {
+.media-social-list-link:hover,
+:focus {
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
